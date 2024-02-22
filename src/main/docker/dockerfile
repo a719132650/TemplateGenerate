@@ -1,0 +1,4 @@
+FROM java:8
+VOLUME /tmp/tomcat
+ADD kgs.jar kgs.jar
+ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/kgs.jar"]
