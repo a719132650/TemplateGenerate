@@ -16,13 +16,7 @@ public class TemplateGenerateController {
 
     @Autowired
     private DBCreateGenerateService dbCreateGenerateService;
-
-//    @RequestMapping("/dbCreateGenerate")
-//    @ResponseBody
-//    public KgResponseJson dbCreateGenerate(@RequestBody DBGenerate dbGenerate){
-//        return dbCreateGenerateService.dbCreateGenerate(dbGenerate);
-//    }
-
+    
     @RequestMapping("/doGenerate")
     @ResponseBody
     public KgResponseJson doGenerate(@RequestBody FullGenerate fullGenerate){
